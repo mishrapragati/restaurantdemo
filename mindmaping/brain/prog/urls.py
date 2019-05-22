@@ -7,7 +7,6 @@ from brain.prog import views
 
 
 urlpatterns = [
-    #path('admin/', admin.site.urls),
    path(r'^$', include('prog.urls.py')),
    url(r'^$',views.individual_post),
    path('admin/', admin.site.urls),

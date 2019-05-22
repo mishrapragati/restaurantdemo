@@ -1,6 +1,6 @@
 from django.contrib import admin
-from django.contrib import admin
-from brain.prog.models import UserProfileInfo, User
+from brain.prog.models import UserProfileInfo,user
+
 # Register your models here.
 admin.site.register(UserProfileInfo)
-# Register your models here.
+

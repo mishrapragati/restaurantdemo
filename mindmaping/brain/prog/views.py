@@ -1,21 +1,19 @@
 from django.http import HttpResponse
 from django.shortcuts import render
-from prog.forms  import UserForm,UserProfileInfoForm
+from prog.forms import UserForm,UserProfileInfoForm
 from django.contrib.auth import authenticate, login, logout
 from django.http import HttpResponseRedirect, HttpResponse
 from django.urls import reverse
 from django.contrib.auth.decorators import login_required
-import sqlite3
-from sqlite3 import Error
+# import sqlite3
+# from sqlite3 import Error
 
 #def index(request):
-  #  return HttpResponse('Hello, welcome .')
-def index(request):
-    return render(request,'brain/template/index.html')
+ #   return render(request,'brain/template/index.html')
 
 
-def individual_post(request):
-    return HttpResponse('Hi, this is where an individual post will be.')
+#def individual_post(request):
+ #   return HttpResponse('Hi, this is where an individual post will be.')
 
 
 @login_required
